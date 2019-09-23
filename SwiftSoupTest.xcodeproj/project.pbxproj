@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		C37D840A23397B1200735DF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37D840823397B1200735DF3 /* Main.storyboard */; };
 		C37D840C23397B1500735DF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C37D840B23397B1500735DF3 /* Assets.xcassets */; };
 		C37D840F23397B1500735DF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37D840D23397B1500735DF3 /* LaunchScreen.storyboard */; };
+		C37D841823397B4D00735DF3 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = C37D841723397B4D00735DF3 /* SwiftSoup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C37D841823397B4D00735DF3 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = SwiftSoupTest;
+			packageProductDependencies = (
+				C37D841723397B4D00735DF3 /* SwiftSoup */,
+			);
 			productName = SwiftSoupTest;
 			productReference = C37D83FF23397B1200735DF3 /* SwiftSoupTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = C37D83F623397B1200735DF3;
+			packageReferences = (
+				C37D841623397B4D00735DF3 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = C37D840023397B1200735DF3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -285,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5XJYJPRTH5;
 				INFOPLIST_FILE = SwiftSoupTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5XJYJPRTH5;
 				INFOPLIST_FILE = SwiftSoupTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C37D841623397B4D00735DF3 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C37D841723397B4D00735DF3 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C37D841623397B4D00735DF3 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C37D83F723397B1200735DF3 /* Project object */;
 }
